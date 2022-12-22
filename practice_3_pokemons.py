@@ -24,15 +24,14 @@ class Pokemon(EmojiMixin, BasePokemon):
         super().__init__(name, category)
 
 
-base_charmander = BasePokemon(name="Charmander", category="Lizard")
-print(base_charmander)
+if __name__ == '__main__':
+    base_charmander = BasePokemon(name="Charmander", category="Lizard")
+    print(base_charmander)
 
-charmander = Pokemon(
-    name="Charmander",
-    category="Lizard",
-    weaknesses=("water", "ground", "rock"),
-    poketype="fire",
-)
-
-
-print(charmander)
+    charmander = Pokemon(
+        name="Charmander",
+        category="Lizard",
+        weaknesses=("water", "ground", "rock"),
+        poketype="fire",
+    )
+    print(charmander)
